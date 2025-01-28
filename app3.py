@@ -129,5 +129,5 @@ with tab2:
         #### About the Model:
         The app uses a **Multi-Layer Perceptron (MLP)** model trained on historical sales data. The model takes into account various factors such as price, stock, rating, location, and category to provide accurate sales predictions.
 
-        For any questions or feedback, please contact us at **support@ecommerceprediction.com**.
+        For full documentation, please visit [https://github.com/jvontama96/growlab-product-sales-prediction](https://github.com/jvontama96/growlab-product-sales-prediction).
     """)
