@@ -5,6 +5,10 @@ import numpy as np
 import pandas as pd
 from PIL import Image
 
+st.set_page_config(
+    page_title="Growlab Product Sales Prediction",
+    layout="wide"
+)
 # Load banner image
 banner_image = Image.open("image.png")
 
