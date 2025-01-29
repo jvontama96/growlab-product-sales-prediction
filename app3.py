@@ -42,13 +42,13 @@ st.image(banner_image, use_container_width=True)  # Display banner image
 tab1, tab2 = st.tabs(["Sales Prediction", "About"])
 
 # Sales Prediction Tab
-with tab1:
-    st.info("""This app is designed to help Shopee online store user predict future sales based on key product attributes such as price, stock quantity, rating, location, and category."""
-    
-    """How It Works:
-    1. **Input Parameters**: Provide the required details about your product, including price, stock quantity, rating, location, and category.
-    2. **Predict Sales**: Click the **Predict Sales** button to get the predicted sales quantity and value for the next 30 days.
-    """)
+st.info("""
+This app is designed to help Shopee online store users predict future sales based on key product attributes such as price, stock quantity, rating, location, and category.
+
+#### How It Works:
+1. **Input Parameters**: Provide the required details about your product, including price, stock quantity, rating, location, and category.
+2. **Predict Sales**: Click the **Predict Sales** button to get the predicted sales quantity and value for the next 30 days.
+""")
     
     # Input fields in the main layout
     st.header("Input Parameters")
