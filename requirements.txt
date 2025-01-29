@@ -35,7 +35,7 @@ frozenlist==1.2.0
 fsspec==2024.10.0
 fst-pso==1.8.1
 future==0.18.3
-gensim==4.3.0
+gensim==4.2.0
 GitPython==3.1.43
 google-ai-generativelanguage==0.6.10
 google-api-core==2.23.0
