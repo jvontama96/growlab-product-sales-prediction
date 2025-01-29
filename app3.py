@@ -1,23 +1,10 @@
 import streamlit as st
-import torch
 import numpy as np
 import pandas as pd
 from PIL import Image
 
 # Load banner image
 banner_image = Image.open("image.png")
-
-# Define the MLPModel class
-class MLPModel(torch.nn.Module):
-    def __init__(self):
-        super(MLPModel, self).__init__()
-        self.fc1 = torch.nn.Linear(14, 64)  # Input size 14, Output size 64
-        self.fc2 = torch.nn.Linear(64, 1)   # Output size 1 (for sales prediction)
-
-    def forward(self, x):
-        x = torch.relu(self.fc1(x))
-        x = self.fc2(x)
-        return x
 
 # Load the trained model
 model = MLPModel()
