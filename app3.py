@@ -40,7 +40,8 @@ st.image(banner_image, use_container_width=True)  # Display banner image
 
 # Create tabs
 tab1, tab2 = st.tabs(["Sales Prediction", "About"])
-    
+
+with tab1:
     # Input fields in the main layout
     st.markdown("""
     <style>
