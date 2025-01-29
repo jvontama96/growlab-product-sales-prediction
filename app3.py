@@ -63,6 +63,7 @@ with tab1:
         2. **Predict Sales**: Click the **Predict Sales** button to get the predicted sales quantity and value for the next 30 days.
         </div>
     """, unsafe_allow_html=True)
+    
     col1, col2 = st.columns(2)
 
     with col1:
