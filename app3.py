@@ -60,10 +60,10 @@ with tab1:
         </style>
                     
         <div class="info-box">
-        This app is designed to help Shopee online store users predict future sales of product that they going to put in their online stores
+        This app is designed to help Shopee online store users predict the future sales of products they plan to list in their online stores.
 
         #### How It Works:
-        1. **Input Parameters**: Provide the required details about your product price, stock quantity, rating, location, and category.
+        1. **Input Parameters**: Input your product price, stock quantity, rating, location, and category.
         2. **Predict Sales**: Click the **Predict Sales** button to get the predicted sales quantity and value for the next 30 days.
         </div>
     """, unsafe_allow_html=True)
