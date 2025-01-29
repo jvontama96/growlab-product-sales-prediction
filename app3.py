@@ -36,7 +36,7 @@ lokasi_options = data["Lokasi"].unique().tolist()
 categories = data["Category"].unique().tolist()
 
 # Streamlit app layout
-st.image(banner_image, use_column_width=True)  # Display banner image
+st.image(banner_image, use_container_width=True)  # Display banner image
 
 # Create tabs
 tab1, tab2 = st.tabs(["Sales Prediction", "About"])
