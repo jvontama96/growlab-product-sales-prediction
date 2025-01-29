@@ -44,23 +44,25 @@ tab1, tab2 = st.tabs(["Sales Prediction", "About"])
 with tab1:
     # Input fields in the main layout
     st.markdown("""
-    <style>
-    .info-box {
-        background-color: rgba(0, 123, 255, 0.1);  /* Transparent blue */
-        padding: 20px;
-        border-radius: 10px;
-        border: 1px solid rgba(0, 123, 255, 0.5);  /* Semi-transparent border */
-    }
-    </style>
-    
-    <div class="info-box">
-    This app is designed to help Shopee online store users predict future sales based on key product attributes such as price, stock quantity, rating, location, and category.
+        <style>
+        .info-box {
+            background-color: rgba(0, 123, 255, 0.1);  /* Transparent blue */
+            padding: 10px 15px;  /* Adjust padding to be smaller */
+            border-radius: 5px;
+            border: 1px solid rgba(0, 123, 255, 0.5);  /* Semi-transparent border */
+            margin-bottom: 10px;  /* Reduced space between the box and the next section */
+            word-wrap: break-word;  /* Ensure the text wraps properly */
+        }
+        </style>
+                    
+        <div class="info-box">
+        This app is designed to help Shopee online store users predict future sales of product.
 
-    #### How It Works:
-    1. **Input Parameters**: Provide the required details about your product, including price, stock quantity, rating, location, and category.
-    2. **Predict Sales**: Click the **Predict Sales** button to get the predicted sales quantity and value for the next 30 days.
-    </div>
-""", unsafe_allow_html=True)
+        #### How It Works:
+        1. **Input Parameters**: Provide the required details about your product, including price, stock quantity, rating, location, and category.
+        2. **Predict Sales**: Click the **Predict Sales** button to get the predicted sales quantity and value for the next 30 days.
+        </div>
+    """, unsafe_allow_html=True)
     col1, col2 = st.columns(2)
 
     with col1:
