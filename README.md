@@ -1,5 +1,8 @@
 <h1>Welcome to the Growlab Sales Prediction App!</h1>
 <p>This app is designed to help Shopee online store users predict future sales based on key product attributes such as price, stock quantity, rating, location, and category.</p>
+<p align="left">
+<a href="https://growlab-sales-prediction.streamlit.app" style="font-weight: bold; font-size: larger; color: #007BFF;">Link to Streamlit Web App</a>
+</p>
 
 <h2>How It Works:</h2>
 <ol>
