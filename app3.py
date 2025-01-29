@@ -60,10 +60,10 @@ with tab1:
         </style>
                     
         <div class="info-box">
-        This app is designed to help Shopee online store users predict future sales of product.
+        This app is designed to help Shopee online store users predict future sales of product that they going to put in their online stores
 
         #### How It Works:
-        1. **Input Parameters**: Provide the required details about your product, including price, stock quantity, rating, location, and category.
+        1. **Input Parameters**: Provide the required details about your product price, stock quantity, rating, location, and category.
         2. **Predict Sales**: Click the **Predict Sales** button to get the predicted sales quantity and value for the next 30 days.
         </div>
     """, unsafe_allow_html=True)
@@ -72,14 +72,13 @@ with tab1:
     col1, col2 = st.columns(2)
 
     with col1:
+        lokasi = st.selectbox("Location (Lokasi)", lokasi_options, help="Select the location of the product.")
+        category = st.selectbox("Category", categories, help="Select the product category.") 
+    with col2:
         harga = st.number_input("Price (Harga)", min_value=0, help="Enter the price of the product.")
         jumlah_stok = st.number_input("Stock Quantity (Jumlah Stok)", min_value=0, help="Enter the current stock quantity.")
-
-    with col2:
         rating = st.number_input("Rating", min_value=0, max_value=5, help="Enter the product rating (0 to 5).")
-        lokasi = st.selectbox("Location (Lokasi)", lokasi_options, help="Select the location of the product.")
-        category = st.selectbox("Category", categories, help="Select the product category.")
-
+        
     # Encode Lokasi and Category
     lokasi_category_filter = (data["Lokasi"] == lokasi) & (data["Category"] == category)
     median_harga = data.loc[lokasi_category_filter, "Harga"].median()
