@@ -119,7 +119,6 @@ with tab1:
         predicted_sales_value = predicted_sales_quantity * harga
 
         # Display results in an emphasized layout
-        st.success("### Prediction Results")
         st.markdown(f"**Predicted Sales Quantity for the Next 30 Days:** `{predicted_sales_quantity:.0f}` units")
         st.markdown(f"**Predicted Sales Value for the Next 30 Days:** `Rp {predicted_sales_value:,.2f}`")
         st.markdown(f"**Stock Adjustment Recommendation:** `{jumlah_stok - predicted_sales_quantity:.0f}` units")
